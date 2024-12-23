@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <!-- Projects Section-->
+    <section class="py-5">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Проекты</span></h1>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Project Card 1-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">
+                                        <a class="text-gradient" href="https://github.com/IliaSuponeff/StudentsAccounting" target="blank">
+                                            <img width="48" height="48" src="{{ url_for('static', filename='assets/student_accounting_project_icon.png') }}" alt="...">
+                                            StudentsAccounting
+                                        </a>
+                                    </h2>
+                                    <p>
+                                        Приложение разработано, для репетитора по заказу.
+                                        Оснавная задача - это учёт суммарного заработка с учеников репетитора.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">
+                                        <a class="text-gradient" href="https://github.com/IliaSuponeff/OCaml-PolymorphicVariantsTypes" target="blank">
+                                            <i class="bi bi-github"></i>
+                                            Интерпретатор MiniML
+                                        </a>
+                                    </h2>
+                                    <p>Интерпретатор OCaml MiniML с поддержкой polymorphic variants types</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">
+                                        <a class="text-gradient" href="https://github.com/spbu-coding-2023/graphs-graphs-12" target="blank">
+                                            <img width="48" height="48" src="{{ url_for('static', filename='assets/graph_visualizer_project_icon.png') }}" alt="...">
+                                            Graph Visualizer
+                                        </a>
+                                    </h2>
+                                    <p>
+                                        Graph Visualizer предоставляет графический пользовательский интерфейс для визуализации графиков,
+                                        их анализа с использованием различных алгоритмов и сохранения результатов.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 4-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">
+                                        <a class="text-gradient" href="https://github.com/spbu-coding-2023/trees-12" target="blank">
+                                            <img width="48" height="48" src="{{ url_for('static', filename='assets/graph_visualizer_project_icon.png') }}" alt="...">
+                                            Kotlin Library TreeTripper
+                                        </a>
+                                    </h2>
+                                    <p>
+                                        Библиотека Tree Tripper: предоставляет реализации следующих структур данных:
+                                        <ol>
+                                            <li>Простейшее двоичное дерево поиска</li>
+                                            <li>AVL дерево</li>
+                                            <li>Красно-чёрное дерево</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 5-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">
+                                        <a class="text-gradient" href="https://github.com/spbu-coding-2023/5-IliaSuponeff" target="blank">
+                                            <i class="bi bi-github"></i>
+                                            BigInteger Calculator
+                                        </a>
+                                    </h2>
+                                    <p>
+                                        Консольная утилита calculator,
+                                        которая позволяет вычислять арифметические выражения для целых чисел произвольной длины.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 6-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">
+                                        <a class="text-gradient" href="https://github.com/CrocodielRussian/Compiler" target="blank">
+                                            <img width="48" height="48" src="{{ url_for('static', filename='assets/compiler_project_icon.png') }}" alt="...">
+                                            Oberon Compiler
+                                        </a>
+                                    </h2>
+                                    <p>
+                                        Этот проект представляет собой простой компилятор языка программирования Oberon.
+                                        Он выполняет синтаксический анализ кода Oberon и создает из него AST.
+                                        После этого он переводит его как в RISC-VAST. И, наконец, генерирует код RISK-V для выполнения программы.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block subscripts %}
+{% endblock %}
